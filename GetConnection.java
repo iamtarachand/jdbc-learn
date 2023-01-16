@@ -5,7 +5,7 @@ public class GetConnection {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/learn_jdbc?autoReconnect=true&useSSL=false";
             String username = "root";
-            String password = "RajMahi123@";
+            String password = "root";
             Connection con = DriverManager.getConnection(url,username,password);
             if (con.isClosed()){
                 System.out.println("Something wrong...");
